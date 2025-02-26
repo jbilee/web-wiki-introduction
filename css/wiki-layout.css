@@ -69,6 +69,24 @@ article {
   flex-flow: column;
 }
 
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+}
+
+div.gallery > img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
 div.thumbnail {
   display: flex;
   justify-content: center;
@@ -98,7 +116,7 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shared-ccf71.appspot.com/o/images%2Fprofile.JPG?alt=media&token=3faf5bfe-312b-4fa3-b341-de678a80bb6f");
   background-size: 100%;
   background-position: center 100%;
   width: var(--aside-width);
@@ -123,6 +141,19 @@ ol.contents li:not(:last-child) {
 ol.contents li a {
   text-decoration: none;
   color: var(--font-default-color);
+}
+
+fieldset {
+  display: flex;
+}
+
+input {
+  flex-grow: 1;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 footer {
